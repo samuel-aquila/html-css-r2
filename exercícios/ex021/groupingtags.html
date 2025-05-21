@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #5a5a5a;
+            margin: 0px;
+        }
+        header {
+            background-color: #ffffff;
+            padding: 10px;
+            margin: 14px 20px;
+            box-shadow: 4px 3px 8px 0px #0f0f0f86;
+            border-radius: 0px 20px 0px 20px;
+        }
+        article {
+            padding: 10px;
+            background-color: #d8d8d8;
+            border-radius: 0px 20px 0px 20px;
+            
+        }
+        main {
+            background-color: #ffffff;
+            padding: 10px;
+            margin: 14px 20px;
+            box-shadow: 4px 3px 8px 0px #0f0f0f86;
+            border-radius: 0px 20px 0px 20px;
+        }
+        aside {
+            padding: 3px 10px 3px 10px;
+            width: 225px;
+            background-color: #b1b1b1;
+            border-radius: 0px 20px 0px 20px;
+        }
+        aside > p{
+            margin: 0px;
+        }
+        footer {
+            text-align: center;
+            background-color: #000000;
+            padding: 4px;
+            box-shadow: 4px 3px 8px 0px #0f0f0f86;
+        }
+        footer > p {
+            margin: 0px;
+            
+        }
+        a {
+            text-decoration: none;
+        }
+        
+        nav {
+            background-color: #000000;
+            padding: 4px;
+            border-radius: 0px 20px 0px 20px;
+        }
+        nav > a {
+            margin: 20px;
+        }
+        .made {
+            color: #ffffff;
+        }
+        h1, h2, p {
+            color: #000000;
+        }
+        .linkoff {
+            text-decoration: none;
+            color: rgb(255, 0, 136);
+            border: none;
+            padding: 0px;
+        }
+        .linkoff:visited {
+            color: rgb(255, 0, 136);
+            text-decoration: underline;
+        }
+        .linkoff:hover{
+            color: rgb(128, 0, 255);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+        <header>
+            <a href="box01.html">
+                <h1 class="title">
+                    Meu site
+                </h1>
+            </a>
+            <nav>
+                <a href="" class="linkoff">Link</a>
+                <a href="" class="linkoff">Link</a>
+                <a href="" class="linkoff">Link</a>
+            </nav>
+        </header>
+        <main>
+            <section id="assuntos">
+
+            </section>
+            <section id="notícias">
+                <article>
+                    <h1>Notícia do Bolsonaro</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima non accusantium cum, earum eos neque sunt voluptas fuga quidem repellat, sint ad. Omnis quia voluptatem inventore placeat neque consequatur. Incidunt itaque ex tenetur, modi neque similique accusamus impedit fuga vel esse dicta eveniet dolore deleniti quas id soluta. Dolorum, modi.
+                    </p>
+                    <aside>
+                        <p>Escrito por João Pé de Feijão</p>
+                    </aside>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p class="made">Made by SaDev</p>
+        </footer>
+</body>
+</html>

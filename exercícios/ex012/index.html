@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Vídeos</title>
+</head>
+<body>
+    <h1>Inserindo vídeos com host local</h1>
+    <p>Este vídeo está em meu self-host</p>
+
+    <video width="560" controls poster="images/uni2.png"><!--Este método é extremamente caro para os clientes que vão pagar um host-->>
+        <source src="midia/Universe3.webm" type="video/webm">
+        <source src="midia/Universe2.mp4" type="video/mp4">
+        <p>Seu navegador não consegue ver este vídeo.
+            <a href="midia/universe.mp4">Clique aqui para baixar em MP4</a>
+        </p>
+    </video>
+    <h1>Inserindo Vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZUYbmLDbvXQ?si=_Z90oMBDZCXjb6Ja" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

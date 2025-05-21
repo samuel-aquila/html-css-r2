@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens de Fundo</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            background-image: url(imagens-cap19/wallpaper001.jpg);
+            background-size: 200px 200px;
+            background-repeat: repeat-y;
+        }
+        .square {
+            border: 3px solid rgb(78, 53, 0);
+            width: 300px;
+            height: 300px;
+            display: inline-block;
+            border-radius: 30px;
+            background-color: rgb(0, 162, 255);
+            box-shadow: -6px 6px 10px rgba(0, 0, 0, 0.344);
+        }
+        #s1 {
+            background-color: aquamarine;
+        }
+        #s2 {
+            background-image: linear-gradient(to bottom, rgb(13, 0, 255), rgb(0, 183, 255) 80%);
+        }
+        #s3 {
+            background-image: url(imagens-cap19/pattern003.png);
+        }
+    </style>
+</head>
+<body>
+        <div class="square" id="s1">
+        
+        </div>
+        <div class="square" id="s2">
+        </div>
+        <div class="square" id="s3">
+        </div>
+</body>
+</html>

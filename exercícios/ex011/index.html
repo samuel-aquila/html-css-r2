@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Aumente ou diminua o site no navegador, ou abra em outros dispositivos.
+    
+    </p>
+    <picture>
+        <source media="(max-width: 725px)" srcset="imagens/image-p.png" type="image/png">
+        <source media="(max-width: 1025px)" srcset="imagens/image-m.png" type="image/png">
+        <img src="imagens/image-g.png" alt="Imagens flexíveis">
+      </picture>
+      <h1>Reproduzindo Áudio</h1>
+      <p>Áudio em HTML5</p>
+      <h2>Tipo 1 </h2>
+      <audio src="media/Chase Waves - Karneef.mp3" controls autoplay loop></audio>
+      <h2>Tipo 2</h2>
+      <audio preload="metadata" autoplay controls loop><!--loop permite que o áudio fique em loop--></audio>
+      <source src="media/Chase Waves - Karneef.mp3" type="audio/mp3">
+      <source src="media/Chase Waves - Karneef.ogg" type="audio/ogg">
+      <source src="media/Chase Waves - Karneef.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir o Áudio. <a href="media/Chase Waves - Karneef.mp3">Clique aqui para fazer o download do Áudio em MP3</a></p>
+      </audio>
+</body>
+</html>

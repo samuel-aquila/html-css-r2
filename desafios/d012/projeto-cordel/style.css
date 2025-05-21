@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'canoodle';
+    src: url(fontes/DK\ Canoodle.otf);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --fonte2: 'canoodle', sans-serif;
+    --fonte1: 'poppins', sans-serif;
+}
+
+section pre {
+    white-space: pre-line;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    padding: 30px 0px 0px 0px;
+    font-variant: small-caps;
+    font-family: var(--fonte1);
+    font-size: 5vw;     
+}
+
+header p{
+    padding: 0px 0px 30px 0px;
+}
+
+section {
+    padding: 10vh 0px 10vh 30px;
+    line-height: 1.6em;
+    font-size: 2.5vw;
+}
+
+.normal {
+    background-color: white;
+    color: black;
+}
+
+.img {
+    background-color: blue;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.521);
+    background-attachment: fixed;
+}
+
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+.img  pre {
+    display: inline-block;
+    padding: 5px 10px 5px 5px;
+    background-color: rgba(0, 0, 0, 0.485);
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+pre {
+    font-family: var(--fonte2);
+    letter-spacing: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
