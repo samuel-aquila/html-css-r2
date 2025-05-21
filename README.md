@@ -1,1 +1,2 @@
-Este é o meu repositório de aulas e desafios de html/css. Esta é a segunda versão deste repositório, por isso "r2". O orginal foi excluido, mas será restaurado a partir de um backup.
+# html-css
+
