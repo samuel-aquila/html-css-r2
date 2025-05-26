@@ -9,16 +9,18 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+        thead th{
+            position: sticky;
+            top: -1px;
+            background-color: blue;
+        }
         table {
             border-collapse: collapse;
+            position: relative;
         }
         td, th {
             padding: 10px;
             border: 1px solid black;
-        }
-        td:nth-child(1) {
-            background-color: blue;
-            color: white;
         }
         td:nth-child(2) {
             font-weight: 600;
@@ -30,7 +32,15 @@
             background-color: blue;
             color: white;
         }
-
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+        caption {
+            font-weight: bold;
+            background-color: lightgray;
+            padding: 10px;
+            font-size: 1,5em;
+        }
     </style>
 </head>
 <body>
@@ -39,13 +49,13 @@
     </h1>
 
     <table>
-        <caption><strong>População do Brasil por Unidade Federativa</strong></caption>
+        <caption>População do Brasil por Unidade Federativa</caption>
         <thead>
             <tr>
-                <td></td>
-                <th>Estado</th>
-                <th>População (2024)</th>
-                <th>País Comparável</th>
+                <th></th>
+                <th scope="col">Estado</th>
+                <th scope="col">População (2024)</th>
+                <th scope="col">País Comparável</th>
             </tr>
         </thead>
 
@@ -217,7 +227,7 @@
         <tfoot>
             <tr>
                 <td></td>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td><strong>212 583 750</strong></td>
             </tr>
         </tfoot>
